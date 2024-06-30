@@ -1,0 +1,62 @@
+{
+  "name": "electron-playground",
+  "productName": "electron-playground",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": ".vite/build/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "biome lint ./src",
+    "format": "biome format --write ./src"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@electron-forge/cli": "^7.4.0",
+    "@electron-forge/maker-deb": "^7.4.0",
+    "@electron-forge/maker-rpm": "^7.4.0",
+    "@electron-forge/maker-squirrel": "^7.4.0",
+    "@electron-forge/maker-zip": "^7.4.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.4.0",
+    "@electron-forge/plugin-fuses": "^7.4.0",
+    "@electron-forge/plugin-vite": "^7.4.0",
+    "@electron-forge/shared-types": "^7.4.0",
+    "@electron/fuses": "^1.8.0",
+    "@generouted/react-router": "^1.19.5",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "electron": "31.1.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "ts-node": "^10.0.0",
+    "typescript": "~4.5.4",
+    "vite": "^5.0.12"
+  },
+  "keywords": [],
+  "author": {
+    "name": "wen",
+    "email": "wisakura@outlook.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@apollo/client": "^3.10.8",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.21",
+    "@remix-run/router": "^1.17.0",
+    "@tanstack/react-table": "^8.17.3",
+    "clsx": "^2.1.1",
+    "electron-squirrel-startup": "^1.0.1",
+    "jotai": "^2.8.4",
+    "lucide-react": "^0.399.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router": "^6.24.0",
+    "react-router-dom": "^6.24.0",
+    "scheduler": "^0.23.2"
+  }
+}
