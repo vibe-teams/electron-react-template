@@ -1,13 +1,17 @@
-import { Routes } from "@generouted/react-router";
-import { TitleBar } from "@/components/title-bar";
+import { Routes } from '@generouted/react-router';
+import { TitleBar } from '@/components/ui/title-bar';
+import { ThemeProvider } from '@mui/material';
+import { theme } from '@/components/theme';
 
 export function Layout() {
   return (
-    <div className='root-layout'>
-      <TitleBar />
-      <div className='content'>
-        <Routes />
+    <ThemeProvider theme={theme}>
+      <div className='root-layout'>
+        <TitleBar />
+        <div className='content'>
+          <Routes />
+        </div>
       </div>
-    </div>
+    </ThemeProvider>
   );
 }

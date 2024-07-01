@@ -5,6 +5,7 @@ import type { ConfigEnv, UserConfig } from 'vite';
 import { defineConfig } from 'vite';
 import path from 'node:path';
 import { pluginExposeRenderer } from './vite.base.config';
+
 // https://vitejs.dev/config
 export default defineConfig((env) => {
   const forgeEnv = env as ConfigEnv<'renderer'>;
@@ -16,6 +17,9 @@ export default defineConfig((env) => {
     mode,
     base: './',
     build: {
+      rollupOptions: {
+        external: ['react', 'react-dom', '@mui/**'],
+      },
       outDir: `.vite/renderer/${name}`,
     },
     plugins: [pluginExposeRenderer(name), react(), generouted()],
