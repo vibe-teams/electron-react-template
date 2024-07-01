@@ -1,8 +1,8 @@
 {
-  "name": "electron-playground",
-  "productName": "electron-playground",
+  "name": "electron-react-template",
+  "productName": "electron-react-template",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Electron quickstart template created with electron forge, vite, react, typescript, built-in @mui/matetial, tailwindcss, generouted support",
   "main": ".vite/build/main.js",
   "scripts": {
     "start": "electron-forge start",
