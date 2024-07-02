@@ -1,0 +1,10 @@
+query user {
+  getUserList{
+    list{
+      id
+      name
+      password
+      address
+    }
+  }
+}

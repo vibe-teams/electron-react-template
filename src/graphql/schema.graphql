@@ -1,0 +1,31 @@
+type User {
+  id: String!
+  name: String
+  password: String
+  address: String
+}
+
+type Random {
+  value: Float
+  key: String
+}
+
+type UserListResult {
+  list: [User!]
+}
+
+type Query {
+  random(key: String!): Random!
+  getUserList: UserListResult
+  findUserById(id: Float!): User
+}
+
+type Mutation {
+  createUser(user: UserInput!): User
+}
+
+input UserInput {
+  name: String!
+  password: String!
+  address: String!
+}

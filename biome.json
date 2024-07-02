@@ -6,13 +6,16 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "suspicious": {
+        "noDoubleEquals": "warn"
+      }
     },
-    "ignore": ["./src/router.ts"]
+    "ignore": ["./src/router.ts", "./src/graphql/generated/*"]
   },
   "formatter": {
     "enabled": true,
-    "ignore": ["./src/router.ts"],
+    "ignore": ["./src/router.ts", "./src/graphql/generated/*"],
     "attributePosition": "auto",
     "indentStyle": "space",
     "indentWidth": 2,
