@@ -1,7 +1,10 @@
-import { Routes } from '@generouted/react-router';
+import { routes } from '@generouted/react-router';
 import { TitleBar } from '@/components/ui/title-bar';
 import { ThemeProvider } from '@mui/material';
 import { theme } from '@/components/theme';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
+
+const router = createHashRouter(routes);
 
 export function Layout() {
   return (
@@ -9,7 +12,7 @@ export function Layout() {
       <div className='root-layout'>
         <TitleBar />
         <div className='content'>
-          <Routes />
+          <RouterProvider router={router} />
         </div>
       </div>
     </ThemeProvider>

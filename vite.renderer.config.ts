@@ -17,9 +17,6 @@ export default defineConfig((env) => {
     mode,
     base: './',
     build: {
-      rollupOptions: {
-        external: ['react', 'react-dom', '@mui/**'],
-      },
       outDir: `.vite/renderer/${name}`,
     },
     plugins: [pluginExposeRenderer(name), react(), generouted()],

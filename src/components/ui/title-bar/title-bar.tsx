@@ -11,11 +11,16 @@ export function TitleBar() {
   return (
     <AppBar
       position='sticky'
-      className='title-bar'>
+      className='title-bar'
+      sx={{
+        '&.MuiAppBar-colorPrimary': {
+          background: 'linear-gradient(90deg, #0c49c2, #1c62eb)',
+        },
+      }}>
       <Toolbar
         variant='dense'
         sx={{
-          height: 40,
+          height: 42,
           minHeight: 'unset',
           paddingRight: '0 !important',
         }}>

@@ -15,6 +15,7 @@ export default function Page() {
   return (
     <PageWrapper>
       <Button
+        disableElevation
         variant='contained'
         onClick={handleSwitchLang}>
         {t('switch-lang')}
