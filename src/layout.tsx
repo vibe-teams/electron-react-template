@@ -5,7 +5,6 @@ import { ApolloProvider } from "@apollo/client";
 import { routes } from "@generouted/react-router";
 import { ThemeProvider } from "@mui/material";
 import { RouterProvider, createHashRouter } from "react-router-dom";
-import {} from "@/graphql/generated/apollo"
 
 const router = createHashRouter(routes);
 
