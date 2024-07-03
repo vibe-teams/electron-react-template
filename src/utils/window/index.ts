@@ -1,19 +1,11 @@
-import type { MainWindow } from './typing';
-
-function getMainWindow() {
-  return window as unknown as MainWindow;
-}
-
 export function closeWindow() {
-  getMainWindow().electron?.closeWindow();
+  window.electron?.closeWindow();
 }
 
 export function minimizeWindow() {
-  getMainWindow().electron?.minimizeWindow();
-
+  window.electron?.minimizeWindow();
 }
 
 export function maximizeWindow() {
-  getMainWindow().electron?.maximizeWindow();
-
+  window.electron?.maximizeWindow();
 }
